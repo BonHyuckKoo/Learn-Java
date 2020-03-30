@@ -14,10 +14,3 @@ print -> 3
 
 상황에 따라 조금 다를 것 같은데 full code 있어?
 ```
-Read Me 기능 테스트
-
-#큰글씨
-
-##그다음 큰글씨 
-
-[url]www.naver.com : url 
