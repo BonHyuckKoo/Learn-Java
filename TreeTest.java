@@ -61,6 +61,7 @@ public class TreeTest {
 				System.out.println(que.getData());
 				System.out.println("--------------------");
 				if(que.option == true) {
+					System.out.println("프로그램을 종료합니다");
 					break;
 				}
 			}	
@@ -70,6 +71,7 @@ public class TreeTest {
 				System.out.println(que.getData());
 				System.out.println("--------------------");	
 				if(que.option == true) {
+					System.out.println("프로그램을 종료합니다");
 					break;
 				}
 				
