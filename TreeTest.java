@@ -17,11 +17,11 @@ public class TreeTest {
 		
 		
 		//정답들
-		Node a1 = new Node("구본혁");
-		Node a2 = new Node("이강진");
+		Node a1 = new Node("구본혁",true);
+		Node a2 = new Node("이강진",true);
 		
 		//모를경우
-		Node dont = new Node("누군지 몰라용");
+		Node dont = new Node("누군지 몰라용",true);
 		
 		// 노드값들이 임시저장할 객체
 		Node que = new Node("");
@@ -56,29 +56,25 @@ public class TreeTest {
 			String answer = sc.next();
 			
 			if (answer.equals("Y") || answer.equals("y")) {
-				if(que.left == null) {
-					System.out.println("아직 구현중");
-					break;
-				}
+				
 				que = que.getLeftSubTree();
 				System.out.println(que.getData());
 				System.out.println("--------------------");
-			}	
-			else if (answer.equals("N") || answer.equals("n")){
-				if(que.right == null) {
-					System.out.println("아직 구현중");
+				if(que.option == true) {
 					break;
 				}
+			}	
+			else if (answer.equals("N") || answer.equals("n")){
+
 				que = que.getRightSubTree();
 				System.out.println(que.getData());
-				System.out.println("--------------------");			
+				System.out.println("--------------------");	
+				if(que.option == true) {
+					break;
+				}
+				
 			}
-			else if(que == dont || que == a1 || que == a2) {
-				System.out.println(que.getData());
-				System.out.println("--------------------");
-				System.out.println("프로그램을 종료합니다");
-				break;
-			}else {
+			else {
 				System.out.println("키를 잘못입력하셧습니다.");
 				System.out.println("--------------------");
 				System.out.println("프로그램을 종료합니다");
