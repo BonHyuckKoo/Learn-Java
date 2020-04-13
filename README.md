@@ -38,3 +38,8 @@ sysout(a)   --> 3이 나온다.
 4월 15일- 16일 
 https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AW-hOY5KeEIDFAVg&categoryId=AW-hOY5KeEIDFAVg&categoryType=CODE
 (SW expert 석찬이의 받아쓰기)
+
+
+
+분할정복 (Divide and conqure
+https://ko.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms
